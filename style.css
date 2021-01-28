@@ -1,3 +1,22 @@
+@-webkit-keyframes flip {
+  from {
+    transform: rotateY(90deg)
+  }
+  to {
+    transform: rotateY(0deg)
+  }
+}
+@keyframes flip {
+  from {
+    transform: rotateY(90deg)
+  }
+  to {
+    transform: rotateY(0deg)
+  }
+}
+body {
+  font-family: Garamond, serif;
+}
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -10,15 +29,14 @@ table {
 th, td {
   padding: 30px;
 }
-body {
-  font-family: Garamond, serif;
-}
 h2 {
   opacity: 0.9;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
+  -webkit-animation: flip 1s;
+  animation: flip 1s;
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
