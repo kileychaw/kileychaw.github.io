@@ -1,66 +1,50 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <title>Tarot Cards</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <a href="https://www.kileychaw.com"><img src="img/logo.png" style="width:350px; display: block; margin-left: auto; margin-right: auto; padding-top: 28px;"/></a>
-    <p></p>
-    <table class="center">
-        <tr>
-            <th>
-                <div class="flip-card"> <div class="flip-card-inner"> <div class="flip-card-front">
-                    <img src="img/card1.png" alt="Avatar" style="width:202px;height:284px;">
-                    </div>
-                    <div class="flip-card-back" style="background-image: url('img/card_front.png');">
-                    <br/><br/><h2><i>REVEAL<br/><br/>YOUR<br/><br/>FORTUNE</i><br/><br/>↡</h2>
-                </div></div></div>
-            </th>
-            <th>
-                <div class="flip-card"> <div class="flip-card-inner"> <div class="flip-card-front">
-                    <img src="img/card2.png" alt="Avatar" style="width:202px;height:284px;">
-                    </div>
-                    <div class="flip-card-back" style="background-image: url('img/card_front.png');">
-                    <br/><br/><h2><i>REVEAL<br/><br/>YOUR<br/><br/>FORTUNE</i><br/><br/>↡</h2>
-                </div></div></div>
-            </th>
-            <th>
-                <div class="flip-card"> <div class="flip-card-inner"> <div class="flip-card-front">
-                    <img src="img/card3.png" alt="Avatar" style="width:202px;height:284px;">
-                    </div>
-                    <div class="flip-card-back" style="background-image: url('img/card_front.png');">
-                    <br/><br/><h2><i>REVEAL<br/><br/>YOUR<br/><br/>FORTUNE</i><br/><br/>↡</h2>
-                </div></div></div>
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <div class="flip-card"> <div class="flip-card-inner"> <div class="flip-card-front">
-                    <img src="img/card4.png" alt="Avatar" style="width:202px;height:284px;">
-                    </div>
-                    <div class="flip-card-back" style="background-image: url('img/card_front.png');">
-                    <br/><br/><h2><i>REVEAL<br/><br/>YOUR<br/><br/>FORTUNE</i><br/><br/>↡</h2>
-                </div></div></div>
-            </td>
-            <td>
-                <div class="flip-card"> <div class="flip-card-inner"> <div class="flip-card-front">
-                    <img src="img/card5.png" alt="Avatar" style="width:202px;height:284px;">
-                    </div>
-                    <div class="flip-card-back" style="background-image: url('img/card_front.png');">
-                    <br/><br/><h2><i>REVEAL<br/><br/>YOUR<br/><br/>FORTUNE</i><br/><br/>↡</h2>
-                </div></div></div>
-            </td>
-            <th>
-                <div class="flip-card"> <div class="flip-card-inner"> <div class="flip-card-front">
-                    <img src="img/card6.png" alt="Avatar" style="width:202px;height:284px;">
-                    </div>
-                    <div class="flip-card-back" style="background-image: url('img/card_front.png');">
-                    <br/><br/><h2><i>REVEAL<br/><br/>YOUR<br/><br/>FORTUNE</i><br/><br/>↡</h2>
-                </div></div></div>
-            </th>
-        </tr>
-    </table>
-</body>
+    <head>
+        <title>Tarot Cards</title>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="https://www.kileychaw.com"><img src="img/logo.png" style="width:300px; display: block; margin-left: auto; margin-right: auto; padding-top: 28px;"/></a>
+            <p><br/><h2 style="color:black; opacity: 0.8;" align="center">Kiley invites you to your tarot reading of The Three Fates.</h2><br/></p>
+            <p><h2 style="color:black; opacity: 0.8;" align="center">Which will <i>you</i> choose?</h2></p>
+        </div>
+        <div class="content">
+            <table class="center">
+                <tr>
+                    <th>
+                        <div class="flip-card" style="margin-top:-80px;"> <div class="flip-card-inner"> <div class="flip-card-front">
+                            <img src="img/card1.png" id="change-image" alt="Avatar" style="width:202px;height:284px;">
+                            </div>
+                            <div class="flip-card-back" style="background-image: url('img/card_front.png');">
+                            <br/><br/><a href="" style="text-decoration: none; color: black;"><h2><i>REVEAL<br/><br/>YOUR<br/><br/>FORTUNE</i><br/><br/>↡</h2></a>
+                        </div></div></div>
+                    </th>
+                    <th>
+                        <div class="flip-card" style="margin-top:-80px;"> <div class="flip-card-inner"> <div class="flip-card-front">
+                            <img src="img/card2.png" id="change-image" alt="Avatar" style="width:202px;height:284px;">
+                            </div>
+                            <div class="flip-card-back" style="background-image: url('img/card_front.png');">
+                            <br/><br/><a href="" style="text-decoration: none; color: black;"><h2><i>REVEAL<br/><br/>YOUR<br/><br/>FORTUNE</i><br/><br/>↡</h2></a>
+                        </div></div></div>
+                    </th>
+                    <th>
+                        <div class="flip-card" style="margin-top:-80px;"> <div class="flip-card-inner"> <div class="flip-card-front">
+                            <img src="img/card3.png" id="change-image" alt="Avatar" style="width:202px;height:284px;">
+                            </div>
+                            <div class="flip-card-back" style="background-image: url('img/card_front.png');">
+                            <br/><br/><a href="" style="text-decoration: none; color: black;"><h2><i>REVEAL<br/><br/>YOUR<br/><br/>FORTUNE</i><br/><br/>↡</h2></a>
+                        </div></div></div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <p><h4 style="color:black; opacity: 0.8; margin-bottom: 30px;" align="center">Kiley Chaw Designer Jewelry © 2021</h2></p>
+        </div>
+    </body>
 </html>
