@@ -1,0 +1,72 @@
+@-webkit-keyframes flip {
+    from {
+        transform: rotateY(90deg)
+    }
+    to {
+        transform: rotateY(0deg)
+    }
+}
+@keyframes flip {
+    from {
+        transform: rotateY(90deg)
+    }
+    to {
+        transform: rotateY(0deg)
+    }
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+html, body, .parent {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    font-family: Garamond, serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+}
+.topnav {
+    overflow: hidden;
+}
+.content {
+    flex: 1;
+    width:100%;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    width: 75%;
+    height: 100%;
+    vertical-align: middle;
+}
+th, td {
+    /*padding: 30px;*/
+}
+h2, h3, h1, h4 {
+    opacity: 0;
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
